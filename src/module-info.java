@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author depoo
+ *
+ */
+module YamApp {
+}
