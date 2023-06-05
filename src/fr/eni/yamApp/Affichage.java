@@ -18,6 +18,10 @@ public interface Affichage {
 			{ "+-------+", "| O   O |", "| O   O |", "| O   O |", "+-------+" } // Face 6
 	};
 	
+	default void test() {
+		System.out.println("test");
+	}
+	
 	default void affichageLancer(int nbDe,List<De> list){
 		System.out.println("Dé numéro 1   Dé numéro 2   Dé numéro 3   Dé numéro 4   Dé numéro 5");
 		for (int i = 0; i < graphiqueDes[0].length; i++) {

@@ -12,7 +12,9 @@ public class Joueur {
 	private int numeroJoueur;
     private String nom;
     List<De> desSauvegarde = new ArrayList<>();
+  
     Scanner scan = new Scanner(System.in);
+    
     
     public Joueur() {
     }
@@ -21,6 +23,7 @@ public class Joueur {
     	
         this.numeroJoueur = numeroJoueur;
         this.nom = nom;
+        
     }
 
 	public int getNumeroJoueur() {
@@ -39,6 +42,8 @@ public class Joueur {
 		this.nom = nom;
 	}
 	
+
+	
 	public List<De> sauvegarde(List<De> des) {
 	    List<De> sauvegarde = new ArrayList<>();
 
@@ -51,6 +56,7 @@ public class Joueur {
 	}
     
 	public void choixLancer(List<De> des) {
+		
 		System.out.println("Choix joueur :");
 		System.out.println("1 - Choix dé(s) à relancer");
 		System.out.println("2 - Continuer à lancer");
@@ -77,7 +83,7 @@ public class Joueur {
 		
 		}
 		if (saisie.equals("3")) {
-			System.out.println("Mettre au score");
+			Lancer.setNumeroDeLancer(3);
 		}
 		if (saisie.equals("4")) {
 			des.clear();

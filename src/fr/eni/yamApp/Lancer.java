@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Lancer implements Affichage {
 	Scanner scan = new Scanner(System.in);
 	private List<Joueur> joueurs;
-	int numeroDeLancer;
+	private static int numeroDeLancer;
 	int nombreDes;
 	private List<De> des;
 	
@@ -59,9 +59,9 @@ public void newLancer(Joueur joueur) {
 	/**
 	 * @param numeroDeLancer the numeroDeLancer to set
 	 */
-	public void setNumeroDeLancer(int numeroDeLancer) {
-		this.numeroDeLancer = numeroDeLancer;
-	}
+	 public static void setNumeroDeLancer(int numeroDeLancer) {
+	        Lancer.numeroDeLancer = numeroDeLancer;
+	    }
 
 	/**
 	 * @return the nombreDes
